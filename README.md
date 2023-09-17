@@ -1,5 +1,5 @@
 # Grupo1_SistemasCiberFisicos
-Repositorio del grupo 1 de Sistemas Ciberfísicos FICH-UNL
+Repositorio del grupo 1 para la materia de "Introducción a los Sistemas Ciberfísicos" FICH-UNL
 
 Integrantes:
 
