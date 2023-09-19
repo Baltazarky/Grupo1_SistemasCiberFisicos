@@ -1,0 +1,53 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="DcMotor" CircId="DcMotor-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-52,-196" rotation="360" hflip="1" vflip="1" label="DcMotor-1" idLabPos="-19,-50" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-52,-272" rotation="0" hflip="1" vflip="1" label="DcMotor-2" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="SR04" CircId="SR04-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,-264" rotation="0" hflip="1" vflip="1" label="SR04-3" idLabPos="-16,-48" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Subcircuit" CircId="Uno-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,-172" rotation="450" hflip="1" vflip="1" label="Uno-4" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="5_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="5_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="true" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Battery" CircId="Battery-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-184,80" rotation="1440" hflip="1" vflip="1" label="Battery-6" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="1.4 V" Resistance="1e-14 Ω" />
+
+<item itemtype="Battery" CircId="Battery-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-184,60" rotation="900" hflip="1" vflip="1" label="Battery-7" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="1.4 V" Resistance="1e-14 Ω" />
+
+<item itemtype="Battery" CircId="Battery-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-184,40" rotation="1080" hflip="1" vflip="1" label="Battery-8" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="1.4 V" Resistance="1e-14 Ω" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-152,32" rotation="360" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-16" mainComp="false" Show_id="false" Show_Val="false" Pos="44,-196" rotation="270" hflip="1" vflip="1" label="Ground-16" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Rail" CircId="Rail-50" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-368,-288" rotation="0" hflip="1" vflip="1" label="Rail-50" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="0.5 V" />
+
+<item itemtype="Ground" CircId="Ground-71" mainComp="false" Show_id="false" Show_Val="false" Pos="40,-272" rotation="270" hflip="1" vflip="1" label="Ground-71" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-115" mainComp="false" Show_id="false" Show_Val="false" Pos="-180,100" rotation="630" hflip="1" vflip="1" label="Ground-115" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="connector-116" startpinid="SR04-3-outpin" endpinid="Uno-4-9" pointList="-256,-216,-256,-204,-168,-204,-168,-132" />
+
+<item itemtype="Connector" uid="connector-117" startpinid="SR04-3-trigpin" endpinid="Uno-4-10" pointList="-264,-216,-264,-196,-176,-196,-176,-132" />
+
+<item itemtype="Connector" uid="connector-118" startpinid="Battery-7-rPin" endpinid="Battery-8-lPin" pointList="-200,60,-200,40" />
+
+<item itemtype="Connector" uid="connector-119" startpinid="Battery-6-rPin" endpinid="Battery-7-lPin" pointList="-168,80,-168,60" />
+
+<item itemtype="Connector" uid="connector-120" startpinid="Rail-50-outnod" endpinid="SR04-3-inpin" pointList="-352,-288,-352,-288" />
+
+<item itemtype="Connector" uid="connector-121" startpinid="DcMotor-2-rPin" endpinid="Ground-71-Gnd" pointList="-12,-272,24,-272" />
+
+<item itemtype="Connector" uid="connector-122" startpinid="DcMotor-1-rPin" endpinid="Ground-16-Gnd" pointList="-12,-196,28,-196" />
+
+<item itemtype="Connector" uid="connector-123" startpinid="Battery-8-rPin" endpinid="Uno-4-5V0" pointList="-168,40,-168,12" />
+
+<item itemtype="Connector" uid="connector-124" startpinid="Uno-4-GND0" endpinid="Ground-9-Gnd" pointList="-152,12,-152,16" />
+
+<item itemtype="Connector" uid="connector-125" startpinid="Battery-6-lPin" endpinid="Ground-115-Gnd" pointList="-200,80,-200,100,-196,100" />
+
+<item itemtype="Connector" uid="connector-126" startpinid="DcMotor-1-lPin" endpinid="Uno-4-6" pointList="-92,-196,-136,-196,-136,-132" />
+
+<item itemtype="Connector" uid="connector-127" startpinid="DcMotor-2-lPin" endpinid="Uno-4-7" pointList="-92,-272,-116,-272,-116,-204,-144,-204,-144,-132" />
+
+</circuit>
