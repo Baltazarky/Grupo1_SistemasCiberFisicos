@@ -9,3 +9,4 @@ Integrantes:
 - Ponce, Baltazar
 - Rufiner, Santiago
 - Savat, Emanuel
+- Silvero Aguerrebere, Milton
